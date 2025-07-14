@@ -1,0 +1,137 @@
+*{
+
+  box-sizing: border-box;
+}
+
+body{
+
+  background-color: hsl(47, 88%, 63%);
+   font-family: "Figtree", sans-serif;
+   line-height: 150%;
+   letter-spacing: 0%;
+  
+}
+
+main{
+
+  display: flex;
+  align-items: center;
+  height: 100vh;
+
+}
+.container{
+  background-color:hsl(0, 0%, 100%);
+  padding: 1.5em;
+  border-radius: 20px;
+  box-shadow: 8px 8px black;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  margin: auto;
+  gap: 12px;
+  border: 1px solid #111111;
+  
+}
+
+.container *{
+  margin: 0;
+}
+
+.main-img{
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.learning{
+    background-color: hsl(47, 88%, 63%);
+    align-self: flex-start;
+    padding: 0.25em 0.75em ;
+    color: #111111;
+    font-size: 0.875rem;
+    font-weight: 800;
+}
+
+.published{
+  color: #111111;
+  font-size: 0.875rem;
+    font-weight: 500;
+
+}
+
+
+h1{
+
+  font-size: 1.5rem;
+    font-weight: 800;
+
+}
+
+h1:hover,h1:active{
+  cursor: pointer;
+  color: #F4D04E;
+}
+.content{
+  font-size: 1rem;
+    font-weight: 500;
+    color: #6B6B6B;
+
+}
+
+
+
+.user{
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+}
+
+.user img{
+  border-radius: 50%;
+  width: 2em;
+  height: 2em;
+}
+
+.user > .name{
+  color: #111111;
+  font-size: 0.875rem;
+  font-weight: 800;
+}
+
+/** mobile view */
+
+ 
+
+
+
+
+@media(max-width:850px){
+  .container{
+    width: 90%;
+  }
+
+  .learning{
+    font-size: 0.75rem;
+    font-weight: 800;
+  }
+
+  .published{
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+
+  
+
+  .content{
+    font-size: 0.875rem;
+    font-weight: 500;
+
+
+  }
+
+  h1{
+    font-weight: 800;
+    font-size: 1.25rem;
+  }
+
+}
