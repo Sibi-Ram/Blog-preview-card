@@ -37,29 +37,37 @@
 
 ### What I learned
 
-Initailly in css I used
-```css
-display: flex;
-align-items: center;
-```
-on the ```<main>``` element, but the box was not vertically centered.
-
-After googling I found out the reason.
-The reason: I did not set a height on the flex parent (main), so there was no extra vertical space for centering. ___By default, block elements stretch to 100% width but only as much height as their content.___
-
-corrected code:
-
-Set a height (e.g., height: 100vh;) on the flex parent (```<main>```).
+  
+ ```css
+ align-self: flex-start;
+ ```
+  on a flex item (such as ```<p>```) to align it to the start of the cross axis, regardless of the container's align-items value. This property only affects the alignment along the cross axis (vertical if flex-direction is row, horizontal if flex-direction is column).
 
 ```css
-height: 100vh;
-align-items: center;
+.flex-container {
+  display: flex;
+  
+}
+
+.flex-container p {
+  align-self: flex-start;
+  width: fit-content;
+ /*Make the p tag only as wide as its content, not stretching to fill the container.*/
+
+ /*OR*/
+ 
+  width: auto; /* ensures it only takes up as much space as needed */
+  
+}
+
+
 ```
-will vertically center the child inside the parent.
+
+
 
 **Key Learning:**
 
-___For vertical centering with flexbox, the container must have a defined height.___
+___To keep the```<p> ```  as a flex item and have it only take up the space of its text, use ```align-self``` for alignment, and set width: auto (which is default), and remove any flex-grow or flex-basis settings that might cause it to stretch.___
 
 
 ## Author
