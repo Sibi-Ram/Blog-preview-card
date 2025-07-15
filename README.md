@@ -24,7 +24,7 @@
 ### Links
 
 - Source Code: [view on GitHub](https://github.com/Sibi-Ram/Blog-preview-card)
-- Live Site URL: [QR code Component website](https://sibi-ram.github.io/Blog-preview-card/)
+- Live Site URL: [Blog Preview card - website](https://sibi-ram.github.io/Blog-preview-card/)
 
 ## My process
 
@@ -55,7 +55,7 @@
  /*Make the p tag only as wide as its content, not stretching to fill the container.*/
 
  /*OR*/
- 
+
   width: auto; /* ensures it only takes up as much space as needed */
   
 }
